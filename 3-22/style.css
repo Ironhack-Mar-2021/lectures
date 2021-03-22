@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    
+}
+h1{
+    font-size: 30px;
+    color:red;
+    text-decoration: underline;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+}
+
+img{
+    width: 300px;
+    
+}
+
+header{ 
+    border: 1px solid pink;
+    text-align: center;
+}
+
+main{ 
+    padding: 50px;
+    margin: 20px;
+    border: 1px solid blue;
+}
+
+
+/*CLASS*/
+.description{
+    display:block;
+    margin: 10px;
+}
+
+/*PSUEDO CLASS*/
+.description:hover{
+    color:blueviolet;
+}
+
+/*ID*/
+footer #author {
+    margin: 10px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+footer { 
+    background: green;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
