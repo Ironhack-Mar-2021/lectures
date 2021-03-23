@@ -1,0 +1,149 @@
+/**Mobile First but applies to both*/
+*{
+    transition: all .5s;
+}
+body{
+    margin:0;
+    /* height: 2000px; */
+}
+
+header h1 {
+    font-size: 5vw;
+    color: lightseagreen;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: white;
+}
+nav ul {
+   display:flex; 
+   justify-content:space-around;
+   list-style-type: none;
+   padding:0;
+   margin: 0;
+
+}
+
+nav ul li {
+    border: 1px solid black;
+    flex: 1000;
+    text-align: center;
+    padding: 10px;
+  
+}
+
+nav ul li:hover{
+    background: lightcoral;
+}
+
+
+
+main {
+    background: thistle;
+    width: 100vw;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 100vw ;
+}
+
+section#about{
+    width:auto;
+    flex-direction: column;
+    padding: 20px;
+}
+
+div{
+    background: rebeccapurple;
+    padding: 50px;
+    /* width: 200px; */
+    margin: 5px;
+    width: 100%;
+    background-size: contain;
+}
+div:nth-of-type(n+1){
+    background: lightblue;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-image: url('https://avatars.dicebear.com/4.5/api/avataaars/2.svg');
+}
+
+div:nth-of-type(n+2){
+    background: lightblue;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-image: url('https://avatars.dicebear.com/4.5/api/avataaars/3.svg');
+}
+
+div:nth-of-type(n+3){
+    background: lightblue;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-image: url('https://avatars.dicebear.com/4.5/api/avataaars/1.svg');
+}
+
+.sm{
+    flex: 1;
+}
+
+.med{
+    flex:4;
+}
+
+.lg {
+    flex: 10;
+}
+
+section#contact {
+    justify-content: center;
+    background: black;
+    padding: 50px;
+
+}
+
+section#contact form{
+    display:flex;
+    flex-direction: column;
+}
+
+textarea{
+    resize:none;
+}
+
+
+
+/**Desktop styles*/
+@media (min-width: 500px){
+
+
+
+
+
+    header h1 {
+        color: red;
+    }
+    header { 
+        background: black;
+    }
+    main section {
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        /* border: 1px solid red; */
+        width: 100vw ;
+    }
+
+
+
+
+}
