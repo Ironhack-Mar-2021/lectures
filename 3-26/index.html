@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<style>
+    * {
+        transition: all 1s;
+    }
+
+    .active {
+        color: red;
+        font-size: 24px;
+    }
+
+    .special {
+        transform: rotate(180deg);
+        color: purple;
+    }
+</style>
+
+<body>
+    <h1>Dom Manip</h1>
+
+    <main>
+        <div class="greeting english">
+            <p>Happy Happy Friday 🤪</p>
+        </div>
+        <div class="greeting spanish">
+            <p>Feliz Friday 🤪</p>
+        </div>
+        <div class="greeting italian">
+            <p>Bon Friday 🤪</p>
+        </div>
+        <!-- 
+        <div class="greeting">
+            <p>{userInput} Friday 🤪</p>
+        </div> -->
+    </main>
+
+    <form>
+        <input type="text" />
+        <button>Add Greeting</button>
+    </form>
+
+</body>
+<script src="script.js"></script>
+
+
+</html>
