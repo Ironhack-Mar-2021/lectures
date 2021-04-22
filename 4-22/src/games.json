@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Stick Fight",
+        "difficulty": "easy",
+        "rating": 9,
+        "year": 2020,
+        "id": "23452345sfgsdfg34"
+    },
+    {
+        "name": "Kong VS Snake",
+        "difficulty": "very hard",
+        "rating": 5,
+        "year": 2021,
+        "id": "ridiculousId1234"
+    },
+    {
+        "name": "Webopoly",
+        "difficulty": "medium",
+        "rating": 99,
+        "year": 2021,
+        "id": "1938bc4719374c912b7c4"
+    },
+    {
+        "name": "Overwatch",
+        "difficulty": "hard",
+        "rating": 10,
+        "year": 2016,
+        "id": "4234234"
+    }
+]
