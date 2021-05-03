@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
 
     axios
-      .get(`https://dog.ceo/api/breeds/image/random`)
+      .get(`https://iron-cors-anywhere.herokuapp.com/https://dog.ceo/api/breeds/image/random`)
       .then(res => {
         console.log(res)
         setDogPic(res.data.message)

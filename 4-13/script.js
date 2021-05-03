@@ -4,29 +4,38 @@ const ctx = canvas.getContext('2d')
 const img = new Image();
 //img.src = './frame-sprite-animation.png'
 //img.src = './coin-sprite-animation-sprite-sheet.png'
-img.src = `./orc.png`
-img.onload = animate;
+img.src = `./soldier-assaultrifle_sprite.png`
+img.onload = init;
 
 
 //ORc Dying
-let numberOfImages = 13
-let numberOfRows = 21
-let numOfActualImages = 7
-let rowImOn = 20
+let numberOfImages = 20
+let numberOfRows = 1
+let numOfActualImages = 20
+let rowImOn = 0
 
 //Coin Flipping
 // let numberOfImages = 10
 // let numberOfRows = 1
 // let numOfActualImages = 10
 // let rowImOn = 0
-
-
 let sx = 0
 let sy = rowImOn * img.height / numberOfRows
 let sw = img.width / numberOfImages
 let sh = img.height / numberOfRows
 let dx = 0
 let dy = 0
+function init() {
+    sx = 0
+    sy = rowImOn * img.height / numberOfRows
+    sw = img.width / numberOfImages
+    sh = img.height / numberOfRows
+    dx = 0
+    dy = 0
+    animate()
+}
+
+
 
 
 
@@ -34,6 +43,7 @@ function animate() {
     requestAnimationFrame(animate);
 
     ctx.clearRect(0, 0, canvas.width, canvas.height)
+
     ctx.drawImage(
         img, sx, sy, sw, sh,
         dx, dy,
