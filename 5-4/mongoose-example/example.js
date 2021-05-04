@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Cat = require('./models/Cat.js')
 
 mongoose
-    .connect('mongodb://localhost/mongooseVsSnakeVsKong', {
+    .connect(`mongodb+srv://niko:nikoniko@cluster0.k13bi.mongodb.net/mongooseVsCobra?retryWrites=true&w=majority`, {
         useCreateIndex: true,
         useNewUrlParser: true,
         useUnifiedTopology: true
@@ -49,6 +49,8 @@ let cats = [
     { name: 'Daniela', color: 'white', favFoods: ['Lasagna'] }
 ]
 
+
+Cat.insertMany(cats).then(res => console.log(res))
 // Cat.updateMany({}, { age: 3 }).then(res => console.log(res))
 
 // Cat.updateOne({ name: "Juan" }, { $push: { favFoods: ['frejoles'] } }).then(res => console.log(res))
